@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VETA</title>
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="w-full h-full bg-[#000000] max-w-[1480px] m-auto text-lightGray">
+    <div id="root">
+      <header>
+        <nav
+          class="py-[16px] px-[16px] flex justify-between max-w-[1200px] m-auto md:py-[32px]"
+        >
+          <a
+            href="#"
+            class="font-Orbitron text-primary text-[24px] font-semibold"
+            >VETA</a
+          >
+          <div class="hidden items-center gap-7 md:flex">
+            <a
+              href="#"
+              class="text-[16px] text-lightGray font-medium hover:text-primary transition duration-[0.3s] font-notoSans"
+              >Home</a
+            >
+            <a
+              href="#discover-setion"
+              class="text-[16px] text-lightGray font-medium hover:text-primary transition duration-[0.3s] font-notoSans"
+              >About Us</a
+            >
+            <a
+              href="#commitment-section"
+              class="text-[16px] text-lightGray font-medium hover:text-primary transition duration-[0.3s] font-notoSans"
+              >Our Projects</a
+            >
+            <a
+              href="#building-section"
+              class="text-[16px] text-lightGray font-medium hover:text-primary transition duration-[0.3s] font-notoSans"
+              >Community</a
+            >
+            <a
+              href="#footer"
+              class="text-[16px] text-lightGray font-medium hover:text-primary transition duration-[0.3s] font-notoSans"
+              >Get Started</a
+            >
+          </div>
+          <button
+            class="text-primary py-2 px-7 border-2 border-primary rounded-md hidden md:block"
+          >
+            Sign Up
+          </button>
+          <div class="text-white flex items-center text-2xl md:hidden">
+            &#9776;
+          </div>
+        </nav>
+      </header>
+
+      <section
+        id="hero-setion"
+        class="py-[20px] lg:py-[80px] px-[20px] xl:px-[150px] flex flex-col gap-[80px] m-auto justify-between lg:flex-row"
+      >
+        <div class="hero-left lg:w-[50%] w-[100%]">
+          <h1
+            class="text-[76px] font-Orbitron text-white font-bold leading-[80px] mb-[16px] text-center lg:text-left"
+          >
+            Let's explore<br />your own<span class="text-primary">VR</span
+            ><br />world
+          </h1>
+          <p
+            class="text-lightGray text-[17.6px] mb-[32px] font-Noto Sans text-center lg:text-left"
+          >
+            Veta is the next evolution of the VR world, our vision is to help
+            connect all the poeplr in the world by eliminating distance and
+            time.Start your adventure togother now
+          </p>
+          <div class="flex gap-[35px] justify-center lg:justify-start">
+            <button
+              class="text-[16px] py-[9px] px-[28px] bg-primary rounded-md font-bold text-black"
+            >
+              Explore Now
+            </button>
+            <div class="flex items-center gap-[14px]">
+              <i
+                class="fa-solid fa-play text-[25px]"
+                style="color: #ffffff"
+              ></i>
+              <a href="#" class="text-lightGray">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right flex items-center lg:justify-end justify-center">
+          <img
+            src="https://webdesignmastery.github.io/VETA_01-05-24/assets/header.png"
+            alt="img"
+            width="550px"
+            style="filter: drop-shadow(5px 5px 10px #91e506)"
+            class="animate-pulse"
+          />
+        </div>
+      </section>
+
+      <section id="discover-setion" class="mb-32">
+        <h2
+          class="text-[48px] text-white font-Orbitron text-center font-bold mt-20 mb-8"
+        >
+          Discover the <span class="text-primaryDark">world</span><br />
+          based on your loves
+        </h2>
+
+        <div
+          class="discover-cards text-lightGray grid grid-cols-4Cols max-w-[1200px] m-auto text-center gap-[10px] bg-[#121212] rounded-xl border border-gray-600 p-5"
+        >
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-chart-simple text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Commercial</p>
+          </div>
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-user text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Social</p>
+          </div>
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-gamepad text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Games</p>
+          </div>
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-book-open text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Education</p>
+          </div>
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-heart-pulse text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Medical</p>
+          </div>
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-ticket text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Entertainment</p>
+          </div>
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-briefcase text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Business</p>
+          </div>
+          <div
+            class="discover-card py-[65px] px-[16px] hover:bg-primaryDark hover:-translate-y-8 transition duration-[0.3s] rounded-xl hover:text-black"
+          >
+            <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] mb-4 flex items-center justify-center m-auto rounded-lg"
+            >
+              <i class="fa-solid fa-palette text-3xl text-black"></i>
+            </div>
+            <p class="text-base font-bold">VR for Art</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="commitment-section" class="flex flex-col lg:flex-row max-w-[1200px] m-auto ">
+        <div class="commitment-left lg:w-[50%] flex items-center justify-center w-full">
+          <img
+            src="https://webdesignmastery.github.io/VETA_01-05-24/assets/commitment.png"
+            alt="img"
+            width="75%"
+            style="filter: drop-shadow(5px 5px 10px #91e506)"
+            class="animate-pulse"
+          />
+        </div>
+        <div class="commitment-right lg:w-[50%] flex flex-col items-center lg:items-start w-full px-5">
+          <h2 class="text-[48px] text-white font-Orbitron font-bold mt-20 mb-2 text-center lg:text-left">
+            Commitment <br />we've
+            <span class="text-primaryDark">developed</span>
+          </h2>
+          <p class="text-[17.6px] font-semibold text-lightGray lg:pr-[160px] text-center lg:text-left">We believe responsible development is something we always work on, responsible development exists in order to develop a more organised world and lead to better future</p>
+          <div class="flex flex-col gap-8 mt-10 w-full">
+             <div class="flex items-center gap-5 hover:bg-primary py-2 px-2 rounded-xl hover:text-black transition duration-[0.2s] border-lightGray border-2">
+              <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px] flex items-center justify-center  rounded-lg"
+            >
+              <i class="fa-solid fa-shield-halved text-3xl text-black"></i>
+            </div>
+            <p class="text-[17.6px] font-semibold">Immersive Learning System</p>
+             </div>
+             <div class="flex items-center gap-5 hover:bg-primary py-2 px-2 rounded-xl hover:text-black transition duration-[0.2s] border-lightGray border-2">
+              <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px]  flex items-center justify-center rounded-lg"
+            >
+              <i class="fa-solid fa-clipboard-list text-3xl text-black"></i>
+            </div>
+            <p class="font-semibold text-[17.6px]">Immersive Learning System</p>
+             </div>
+             <div class="flex items-center gap-5 hover:bg-primary py-2 px-2 rounded-xl hover:text-black transition duration-[0.2s] border-lightGray border-2">
+              <div
+              class="bg-primaryDark p-4 w-[50px] h-[50px]  flex items-center justify-center rounded-lg"
+            >
+              <i class="fa-solid fa-unlock-keyhole text-3xl text-black"></i>
+            </div>
+            <p class="font-semibold text-[17.6px]">Immersive Learning System</p>
+             </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="building-section" class="flex flex-col lg:flex-row mt-32 max-w-[1200px] m-auto gap-7">
+         <div class="building-left px-5 order-last lg:order-first">
+          <h2 class="text-[48px] text-white font-Orbitron font-bold mt-20 mb-2 text-center lg:text-left ">
+            Building your
+            <span class="text-primaryDark">own <br> world </span>now
+          </h2>
+          <p class="text-[17.6px] font-semibold text-lightGray lg:pr-[160px] text-center lg:text-left">We are already developing exciting new technologies that will help people connect and explore in the world</p>
+
+          <div class="building-cards flex mt-9 gap-4 justify-center lg:justify-start flex-wrap flex-col lg:flex-row">
+              <div class="building-card flex flex-col items-center py-[32px] px-[50px] border-2 border-lightGray rounded-xl gap-4 transition duration-[0.3s] hover:bg-primary hover:text-black">
+                <div
+                class="bg-primaryDark p-4 w-[50px] h-[50px]  flex items-center justify-center rounded-lg"
+              >
+                <i class="fa-solid fa-eye text-3xl text-black"></i>
+              </div>
+              <p class="font-semibold text-[19.2px] text-center">Virtual <br>
+                Reality</p>
+              </div>
+              <div class="building-card flex flex-col items-center  py-[32px] px-[27px] border-2 border-lightGray rounded-xl gap-4 transition duration-[0.3s] hover:bg-primary hover:text-black">
+                <div
+                class="bg-primaryDark p-4 w-[50px] h-[50px]  flex items-center justify-center rounded-lg"
+              >
+                <i class="fa-solid fa-star text-3xl text-black"></i>
+              </div>
+              <p class="font-semibold text-[19.2px] text-center">Augmented <br>
+                Reality</p>
+              </div>
+              <div class="building-card flex flex-col items-center  py-[32px] px-[50px] border-2 border-lightGray rounded-xl gap-4 transition duration-[0.3s] hover:bg-primary hover:text-black">
+                <div
+                class="bg-primaryDark p-4 w-[50px] h-[50px]  flex items-center justify-center rounded-lg"
+              >
+                <i class="fa-regular fa-hard-drive text-3xl text-black"></i>
+              </div>
+              <p class="font-semibold text-[19.2px] text-center">Smart <br>
+                Device</p>
+              </div>
+          </div>
+         </div>
+         <div class="building-right flex items-center">
+           <img src="https://webdesignmastery.github.io/VETA_01-05-24/assets/build.png" alt="img"  width="100%"
+           style="filter: drop-shadow(5px 5px 10px #91e506)"
+           class="animate-pulse">
+         </div>
+      </section>
+
+
+      <section id="getStartedSection" class="max-w-[1200px] py-[30px] px-[16px] m-auto bg-primary mt-20  rounded-xl flex flex-col items-center border-2 border-lightGray">
+        <h2 class="text-[48px] text-black font-Orbitron font-bold mt-20 mb-2 text-center ">
+          Get started with Veta
+        </h2>
+        <p class="text-[17.6px]  text-center text-black">Subscribe and get interesting offers from us, and get the best <br> technology for your various activities</p>
+        <button class="text-white bg-black py-[10px] px-[20px] mt-5 rounded-lg text-base">Get Started</button>
+      </section>
+
+
+
+      <footer>
+        <div  id="footer" class="flex flex-col lg:flex-row gap-10 max-w-[1200px] m-auto items-center justify-between py-[80px] px-[16px]">
+          <div class="footer-left">
+            <a
+            href="#"
+            class="font-Orbitron text-primary text-[24px] font-semibold"
+            >VETA</a>
+          </div>
+          <div class="footer-right  flex flex-col md:flex-row items-center gap-7">
+            <a
+              href="#"
+              class="text-[19.2px] hover:text-white font-medium text-primary transition duration-[0.3s] font-notoSans"
+              >Home</a
+            >
+            <a
+              href="#discover-setion"
+              class="text-[19.2px] hover:text-white font-medium text-primary transition duration-[0.3s] font-notoSans"
+              >About Us</a
+            >
+            <a
+              href="#commitment-section"
+              class="text-[19.2px] hover:text-white font-medium text-primary transition duration-[0.3s] font-notoSans"
+              >Our Projects</a
+            >
+            <a
+              href="#building-section"
+              class="text-[19.2px] hover:text-white font-medium text-primary transition duration-[0.3s] font-notoSans"
+              >Community</a
+            >
+            <a
+              href="#footer"
+              class="text-[19.2px] hover:text-white font-medium text-primary transition duration-[0.3s] font-notoSans"
+              >Get Started</a
+            >
+          </div>
+        </div>
+
+        <div class="sub-footer">
+            <p class="text-center text-[14.4px] border-t p-4 font-semibold border-t-lightGray">Copyright © 2024 Web Design Mastery. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
